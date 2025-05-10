@@ -4,13 +4,26 @@ import javax.swing.*;
 
 
 public class Sudoku {
+
+    //where the button is in our 9*9 grid
+    //keep track of row and column cordinates.
+    class Tile extends JButton{
+        int r;
+        int c;
+
+        Tile(int r,int c){
+            this.r = r;
+            this.c = c;
+        }
+    }
+
     int boardWidth = 600;
     int boardHeight = 500;
     JFrame frame = new JFrame("Sudoku"); //creates a window
     JLabel textLabel = new JLabel();
     JPanel textPanel = new JPanel();
 
-    JPanel
+    JPanel boardPanel = new JPanel();
 
     String[] puzzle = {
             "--74916-5",
@@ -53,5 +66,17 @@ public class Sudoku {
 
         //attach panel to the frame
         frame.add(textPanel,BorderLayout.NORTH);
+
+        boardPanel.setLayout(new GridLayout(9,9));
+        setUpTiles();
+    }
+
+    void setUpTiles(){
+        //for each row and column create a tile which is button
+            for(int r = 0 ;r<9;r++){
+                for (int c = 0; c < 9;c++){
+                    Tile tile = new Tile(r,c);
+                }
+            }
     }
 }
