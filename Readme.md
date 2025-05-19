@@ -1,5 +1,5 @@
 ## Sudoku Game in Java
-# A graphical Sudoku game implementation in Java, featuring a clean interface. This project demonstrates Java Swing and GUI development concepts for building interactive puzzle games.
+- A graphical Sudoku game implementation in Java, featuring a clean interface. This project demonstrates Java Swing and GUI development concepts for building interactive puzzle games.
 
 # Features
 - Classic Sudoku Grid: 9x9 grid with 3x3 sub-grids
